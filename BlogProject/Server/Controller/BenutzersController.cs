@@ -22,7 +22,7 @@ namespace BlogProject.Server.Controller
         [HttpGet]
         void loginFor(string user, string psw)
         {
-
+            testc 
         }
     }
 }
