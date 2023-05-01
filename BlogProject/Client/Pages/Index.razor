@@ -1,0 +1,41 @@
+﻿@page "/"
+
+<div>
+    <center>
+        <label for="bname">Benutzername:
+            <input id="bname" name="bname" @bind="username" @bind:event="onchange">
+        </label>
+    </center>
+</div>
+
+<div>
+    <center>
+        <label for="pwort">Passwort:
+            <input id="pwort" name="pwort" @bind="password" @bind:event="onchange">
+        </label>
+    </center>
+</div>
+
+<div>
+    <center>
+        <button type="button" @onclick="@OnLogin">Login</button>
+    </center>
+</div>
+<br>
+@username
+<br>
+@password
+
+@code {
+
+
+    public string username { get; set; }
+    public string password { get; set; }
+
+    protected void OnLogin(MouseEventArgs mouseEventArgs)
+    {
+        username = new  
+    }
+}
+
+
